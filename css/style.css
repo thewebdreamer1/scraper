@@ -1,0 +1,53 @@
+body {
+  margin: 0; }
+  body .prez_block {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    height: 350px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    cursor: pointer; }
+    body .prez_block .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: 0;
+      transition: opacity .3s ease-in; }
+    body .prez_block .content {
+      width: 75%;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity .3s ease-in; }
+      body .prez_block .content p.name {
+        font-size: 28px;
+        color: white; }
+      body .prez_block .content p.birthday {
+        color: white; }
+    body .prez_block:hover .overlay {
+      opacity: .8; }
+    body .prez_block:hover .content {
+      opacity: 1; }
+  body .modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    top: 0; }
+    body .modal .modal-content {
+      background: #ffffff;
+      width: 500px;
+      max-width: 65%;
+      padding: 25px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%); }
