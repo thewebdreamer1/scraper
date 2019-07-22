@@ -9,13 +9,3 @@ $.getJSON( "output.json", function( data ) {
     wrapper.append( "<div class='modal modal-for-" + modalName + "'><div class='modal-content'><p class='modal-name'>" + data[key].name + "</p><p class='modal-birthday'>Birthday: " + format + "</p><p class='modal-term'>" + term + "</p></div></div>" );
   });
 });
-
-$(document).ready(function(){
-  $(".prez_block").click(function(){
-    var name = $(this).find(".name").text().toLowerCase().replace(/\s/g, '').replace(/\./g,'');
-    $(".modal-for-" + name).show();
-  });
-  $(".modal").click(function(){
-    $(this).hide();
-  });
-});
