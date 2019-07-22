@@ -1,3 +1,13 @@
+$(document).ready(function(){
+  $(".prez_block").click(function(){
+    var name = $(this).find(".name").text().toLowerCase().replace(/\s/g, '').replace(/\./g,'');
+    $(".modal-for-" + name).show();
+  });
+  $(".modal").click(function(){
+    $(this).hide();
+  });
+});
+
 $.getJSON( "output.json", function( data ) {
   var wrapper = $("#wrapper");
   $.each( data, function(key, value) {

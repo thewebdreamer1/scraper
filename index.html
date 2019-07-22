@@ -10,16 +10,5 @@
   <body>
     <div id="wrapper"></div>
     <script src="main.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".prez_block").click(function(){
-          var name = $(this).find(".name").text().toLowerCase().replace(/\s/g, '').replace(/\./g,'');
-          $(".modal-for-" + name).show();
-        });
-        $(".modal").click(function(){
-          $(this).hide();
-        });
-      });
-    </script>
   </body>
 </html>
