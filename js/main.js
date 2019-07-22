@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$( function(){
   $(".prez_block").click(function(){
     var name = $(this).find(".name").text().toLowerCase().replace(/\s/g, '').replace(/\./g,'');
     $(".modal-for-" + name).show();
